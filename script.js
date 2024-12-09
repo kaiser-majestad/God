@@ -12,7 +12,7 @@ async function fetchQuestions() {
     const response = await fetch(apiUrl);
 
     if (!response.ok) {
-      throw new Error(`Error al obtener las preguntas. Estado: ${response.status}`);
+      throw new Error(`Error al obtener las preguntas. Estado: ${response.status}`);//aqui me ayude con ia
     }
 
     const data = await response.json();
@@ -89,7 +89,7 @@ function calculateResult() {
 
 // Función para mezclar el array
 function shuffleArray(array) {
-  return array.sort(() => Math.random() - 0.5);
+  return array.sort(() => Math.random() - 0.5);//aqui me ayude con ia
 }
 
 submitBtn.addEventListener("click", calculateResult);
